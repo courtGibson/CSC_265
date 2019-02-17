@@ -5,6 +5,11 @@
       background-color: rgb(14, 16, 77, 90);
     }
     
+    .grid-container
+    {
+      display: grid;
+    }
+    
     h1, p, li, figcaption
     {
       color: snow;
@@ -61,20 +66,31 @@
     
     
 <body>
+  <div class="grid-container">
+    
+  <div class="grid-item">
   <h1>Visualizations</h1>
+  </div>
+    
+  <div class="grid-item">
   <figure id="1">
     <img id="good" src="good vis.jpg" style="width:50%"></img>
     <figcaption>Fig.1 - Great Visualization.</figcaption>
   </figure>
-
+  </div>
+  
+  <div class="grid-item">
   <figure id="2">
     <img id="bad" src="bad vis.jpg" style="width:100%"></img>
     <figcaption>Fig.2 - Bad Visualization.</figcaption>
   </figure>
+  </div>
 
-<div id="analysis">
+<div class="grid-item">
 <h1>Analysis</h1>
-<div id="fig1">
+</div>
+
+<div class="grid-item" id="fig1">
 <p> The visualization in Figure 1 has Cairo's five qualities of great visualizations.</p>
   <ol>
     <li>It is truthful. </li>
@@ -100,7 +116,7 @@
 </ol>
 </div>
 
-<div id="fig2">
+<div class="gri-item" id="fig2">
 <p> The visualization in Figure 2 does not have Cairo's five qualities of great visualizations and is a bad visualization.</p>
   <ol>
     <li>It is unclear if it is truthful or not.</li>

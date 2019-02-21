@@ -44,7 +44,7 @@
   var acc = 0;
   var calcTot = function(nums, total, acc)
   {
-    return nums.forEach(function(d){total=total+d; acc++;});
+    return nums.forEach(function(d){total=total+d; acc++; mean(total,acc)});
   }
 
   var mean = function(total, acc)

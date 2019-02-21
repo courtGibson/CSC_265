@@ -10,4 +10,4 @@ var mean = function(total, acc)
 }
 
 
-document.write(mean)
+document.write(mean);

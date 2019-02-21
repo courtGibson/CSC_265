@@ -1,22 +1,6 @@
 <html>
   
-  <script>
-  
-  var nums = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
-  var total = 0;
-  var acc = 0;
-  var calcTot = function(nums, total, acc)
-  {
-    return nums.forEach(function(d){total=total+d; acc++;});
-  }
 
-  var mean = function(total, acc)
-  {
-    return total/acc;
-  }
-  
-  document.write.getElementById("mean").innerHTML = mean(total,acc);
-  </script>
   
 <body>
 <h1>Number Cruncher Prep</h1>
@@ -45,7 +29,7 @@
 </ul>
   
   <h2>Mean</h2>
-  <p id="mean"></p>
+  <p id="mean"> </p>
   
   <h2>Median</h2>
   <p></p>
@@ -53,7 +37,23 @@
   <h2>Mode</h2>
   <p></p>
   
+ <script>
   
+  var nums = [11, 4, 41, 50, 7, 19, 8, 18, 2, 6, 43, 6, 20, 43, 2, 23, 12, 24, 31, 29];
+  var total = 0;
+  var acc = 0;
+  var calcTot = function(nums, total, acc)
+  {
+    return nums.forEach(function(d){total=total+d; acc++;});
+  }
+
+  var mean = function(total, acc)
+  {
+    return total/acc;
+  }
+  
+  document.getElementById("mean").innerHTML = mean(total,acc);
+  </script>
   
 </body>
 </html>

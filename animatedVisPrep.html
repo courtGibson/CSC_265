@@ -3,8 +3,9 @@
 <h1>Animated Data Visualization</h1>
 <a href="https://archive.nytimes.com/www.nytimes.com/interactive/science/space/keplers-tally-of-planets.html">link to animated visualization</a>
 <br>
-<p>This data visualization includes the following elements:
-<ul>
+  <h3>This data visualization includes the following elements:</h3>
+<p>
+ <ul>
 <li>A list of stars that have planetary systems that can be arranged by system size or discover date</li>
 <li>The size of the circles representing the stars and planets are relative to their real life sizes</li>
 <li>The size of the radius is relative to the real life radius of each planet</li>
@@ -13,6 +14,21 @@
 <li>If you hover over one of the systems, there is a pop up of information that includes the systems name and how many planets there are</li>
 <li>Depending of who much is known about the system, more information may pop up in the form of descriptions or images</li>
 </ul>
+  If you scroll to the Kepler 62 system, you can see an example of extra information and images. 
+  Also, Kepler 47 shows extra information, images, and a binaray star system.
+  Our solar system is shown at the bottom for comparison.
 </p>
+  
+  <h3>To re-create this visualization you can use the following techniques:</h3>
+  <p>
+     <ul>
+<li>Event listeners are used on the buttons to organize the list of data, when clicked the visualization 
+  is re-drawn</li>
+<li>Event listeners are also used for the hover elements for showing the system names and more information</li>
+<li>You can use webkit to control the movement of the planets and stars, if in a binary system, in their orbits</li>
+<li> The labels and extra information that shows up when a system is hovered over can be created by drawing a rectangle, using mouseon, 
+  and adding the information. You then remove it, using mouseout, after it is no longer being hovered over.</li>
+</ul>
+  </p>
 </body>
 </html>
